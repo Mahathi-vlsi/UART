@@ -22,3 +22,4 @@ vlib work
 vlog rtl/*.v sim/uart_tb.v
 vsim uart_tb
 run -all
+
