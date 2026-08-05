@@ -10,6 +10,15 @@ This project implements a UART Transmitter and Receiver in Verilog.
 - Clock: 50MHz
 
 ## Folder Structure
+.
+├── rtl/
+│   ├── UART_tx.v      # UART Transmitter Module
+│   ├── UART_rx.v      # UART Receiver Module
+│   └── UART_TOP.v     # Top Module - TX + RX Loopback
+├── sim/
+│   └── UART_TB.v      # Testbench for Simulation
+├── README.md
+└── LICENSE
 
 ## Simulation Steps
 
