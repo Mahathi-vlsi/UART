@@ -24,7 +24,8 @@ This project implements a UART Transmitter and Receiver in Verilog.
 
 ### Using Icarus Verilog:
 ```bash
-iverilog -o uart_sim sim/uart_tb.v rtl/uart_tx.v rtl/uart_rx.v rtl/uart_top.v
+iverilog -o uart_sim sim/uart_tb.v rtl/
+uart_tx.v rtl/uart_rx.v rtl/uart_top.v
 vvp uart_sim
 
 vlib work
