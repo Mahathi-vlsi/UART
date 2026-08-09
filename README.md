@@ -34,6 +34,10 @@ vsim uart_tb
 run -all
 
 ## Waveform Results
+# UART Day 1
+
+## Waveform Results
+![UART Waveform](IMG-20260809-WA0019.jpg)
 
 
 ## Observations
