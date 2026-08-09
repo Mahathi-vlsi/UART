@@ -33,7 +33,6 @@ vlog rtl/*.v sim/uart_tb.v
 vsim uart_tb
 run -all
 ## Waveform Results
-
 ![UART Waveform](IMG-20260809-WA0019.jpg)
 
 **Observations:**
