@@ -34,7 +34,7 @@ vsim uart_tb
 run -all
 
 ## Waveform Results
-![UART Waveform](IMG-20260809-WA0019.jpg)
+![UART Waveform](./IMG-20260809-WA0019.jpg)
 
 ## Observations
 - Transmitted: `8'hA5` and `8'h3C`
