@@ -1,61 +1,37 @@
-# UART Communication Module
+UART (Universal Asynchronous Receiver Transmitter)
+Overview
+This project implements a basic UART Transmitter and Receiver using Verilog HDL. UART is a serial communication protocol
 
-This project implements a UART Transmitter and Receiver in Verilog.
+Objectives
+Design a UART Transmitter (TX)
+Design a UART Receiver (RX)
+Verify functionality using a testbench
+Simulate the design and analyze waveforms
+Features
+8-bit Data Transmission
+1 Start Bit
+1 Stop Bit
+Serial Communication
+RTL Design in Verilog
+Functional Verification using Testbench
+Project Files
+uart_tx.v : UART Transmitter
+uart_rx.v : UART Receiver
+uart_TOP.v : Top Module
+uart_TB.v : Testbench
+README.md : Project Documentation
+UART Frame Format
+Start Bit | Data Bits (8-bit) | Stop Bit
 
-## Features
-- Baud Rate: 9600
-- Data bits: 8
-- Stop bits: 1
-- No parity
-- Clock: 50MHz
-
-## Folder Structure
-.
-├── rtl/
-│   ├── UART_tx.v      # UART Transmitter Module
-│   ├── UART_rx.v      # UART Receiver Module
-│   └── UART_TOP.v     # Top Module - TX + RX Loopback
-├── sim/
-│   └── UART_TB.v      # Testbench for Simulation
-├── README.md
-└── LICENSE
-
-## Simulation Steps
-
-### Using Icarus Verilog:
-```bash
-iverilog -o uart_sim sim/uart_tb.v rtl/
-uart_tx.v rtl/uart_rx.v rtl/uart_top.v
-vvp uart_sim
-
-vlib work
-vlog rtl/*.v sim/uart_tb.v
-vsim uart_tb
-run -all
-
-## Observations
-- Transmitted: `8'hA5` and `8'h3C`
-- Received: Same data on `rx_data` ✅
-- `rx_valid` pulse confirms data reception
-- `tx_busy` goes high during transmission
-
-## Key Features
-- UART Tx + Rx with loopback
-- 10-bit frame: 1 Start + 8 Data + 1 Stop
-- Tested with multiple data values
-
-
-## Tools Used
-- EDA Playground
-- Icarus Verilog / ModelSim
-- Verilog RTL
-
-## Waveform
+  0    D0 D1 D2 D3 D4 D5 D6 D7    1
+Tools Used
+Verilog HDL
+EDA Playground
+GTKWave / EPWave
+ ## Waveform
 
 The following waveform shows the simulation results of the UART
-
 ![UART Waveform](waveform.jpg)
-
 
 
 
