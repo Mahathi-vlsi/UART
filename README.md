@@ -54,7 +54,7 @@ run -all
 
 The following waveform shows the simulation results of the UART
 
-![UART Waveform](waveform.jpeg)
+![UART Waveform](waveform.jpg)
 
 
 
