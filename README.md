@@ -33,9 +33,6 @@ vlog rtl/*.v sim/uart_tb.v
 vsim uart_tb
 run -all
 
-## Waveform Results
-![UART Waveform](./IMG-20260809-WA0019.jpg)
-
 ## Observations
 - Transmitted: `8'hA5` and `8'h3C`
 - Received: Same data on `rx_data` ✅
@@ -56,6 +53,7 @@ run -all
 
 The following waveform shows the simulation results of the UART
 
-![UART Waveform](IMG-20260809-WA0019(1).jpg
+![UART Waveform](waveform.jpeg)
+
 
 
