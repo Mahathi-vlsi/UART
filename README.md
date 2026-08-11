@@ -52,6 +52,10 @@ run -all
 - EDA Playground
 - Icarus Verilog / ModelSim
 - Verilog RTL
+## Waveform
 
+The following waveform shows the simulation results of the UART
+
+![UART Waveform](IMG-20260809-WA0019(1).jpg
 
 
